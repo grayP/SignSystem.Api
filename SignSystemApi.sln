@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignSystemApi", "SignSystem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignSystemApi.Tests", "SignSystemApi.Tests\SignSystemApi.Tests.csproj", "{77AF03DD-0316-4215-ABED-AD4D5EAB6A21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nightowlsign.data", "..\nightowlsigns\nightowlsign.data\nightowlsign.data.csproj", "{E006FAC5-FA56-4A62-921C-2E0CC550AE5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{77AF03DD-0316-4215-ABED-AD4D5EAB6A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77AF03DD-0316-4215-ABED-AD4D5EAB6A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77AF03DD-0316-4215-ABED-AD4D5EAB6A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E006FAC5-FA56-4A62-921C-2E0CC550AE5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E006FAC5-FA56-4A62-921C-2E0CC550AE5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E006FAC5-FA56-4A62-921C-2E0CC550AE5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E006FAC5-FA56-4A62-921C-2E0CC550AE5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
