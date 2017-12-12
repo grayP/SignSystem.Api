@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Runtime.InteropServices.ComTypes;
+
 using System.Web.Http;
 using AutoMapper;
-using Marvin.JsonPatch;
 using nightowlsign.data;
 using nightowlsign.data.Models.Stores;
 using SignSystem.DTO.Models.Store;
@@ -18,14 +13,17 @@ namespace SignSystemApi.Controllers
     [RoutePrefix("api/Store")]
     public class StoreController : ApiController
     {
-        private readonly IStoreManager _storeManager;
+        private readonly StoreManager _storeManager;
         private readonly StoreDtoToStore _storeDtoToStore;
-
-        public StoreController(IStoreManager storeManager)
+        public StoreController()
         {
-            _storeManager = storeManager;
+            _storeManager = new StoreManager();        
             _storeDtoToStore= new StoreDtoToStore();
         }
+        //public StoreController(IStoreManager storeManager)
+        //{
+        //    //_storeManager = storeManager;
+        //}
 
         [HttpGet]
         [Route("getstore/{storeId}")]
@@ -62,6 +60,7 @@ namespace SignSystemApi.Controllers
                 return InternalServerError(ex);
             }
         }
+     
 
         [HttpPut]
         [Route("{Id}")]

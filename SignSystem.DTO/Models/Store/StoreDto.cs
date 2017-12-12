@@ -23,7 +23,9 @@ namespace SignSystem.DTO.Models.Store
         public string ProgramFile { get; set; }
         public int NumImages { get; set; }
         public int? SignId { get; set; }
-        public Sign sign => new Sign() { id = SignId ?? 0 };
+        public nightowlsign.data.Schedule DefaultSchedule { get; set; }
+        public nightowlsign.data.Schedule CurrentSchedule { get; set; }
+        public Sign Sign => new Sign() { id = SignId ?? 0 };
     }
 
 }
