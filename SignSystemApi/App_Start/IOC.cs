@@ -78,7 +78,7 @@ namespace SignSystemApi
             To use these abstractions add the AutofacWebTypesModule to the container 
             using the standard RegisterModule method. 
             */
-            builder.RegisterType<nightowlsign_Entities>().As<Inightowlsign_Entities>().InstancePerDependency();
+            builder.RegisterType<Nightowlsign_Entities>().As<INightowlsign_Entities>().InstancePerDependency();
           //  builder.RegisterType<ImageManager>().As<IImageManager>().InstancePerLifetimeScope();
             builder.RegisterType<StoreViewModel>().As<IStoreViewModel>().InstancePerLifetimeScope();
             builder.RegisterType<StoreManager>().As<IStoreManager>().InstancePerDependency();
